@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 마진 계산기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>일본 마진 계산기</h1>
+    <form id="margin-form">
+      <label for="cost">매입가 (엔):</label>
+      <input type="number" id="cost" required>
+
+      <label for="price">판매가 (엔):</label>
+      <input type="number" id="price" required>
+
+      <label for="fee">수수료율 (%):</label>
+      <input type="number" id="fee" step="0.1" required>
+
+      <button type="submit">계산하기</button>
+    </form>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
